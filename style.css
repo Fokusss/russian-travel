@@ -1,0 +1,220 @@
+.page {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #2A2C2F;
+}
+
+
+.header {
+  box-sizing: border-box;
+  max-width: 1184px;
+  margin: 28px 48px 0 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__link {
+  text-decoration: none;
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.header__image {
+  width: 176px;
+  height: 52px;
+}
+
+.header__menu {
+  padding: 0;
+  margin: 18px 0 6px 0;
+  display: flex;
+  gap: 47px; /* https://caniuse.com/?search=gap Поддержка 87% */
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .header {
+    max-width: 928px;
+    margin: 28px 48px 0 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 720px;
+    margin: 28px 24px 0 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    max-width: 288px;
+    margin: 16px auto 0 auto;
+  }
+
+  .header__image {
+    width: 142px;
+    height: 42px;
+  }
+
+  .header__menu {
+    margin: 14px 0 8px 0;
+    gap: 40px;
+  }
+}
+
+
+/* main */
+
+
+/* Lead */
+
+.section {
+  max-width: 984px;
+  margin: 0 auto 0 auto;
+}
+
+.lead {
+  margin-top: 56px;
+}
+
+.lead__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  color: white;
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
+
+.lead__title_width_big {
+  max-width: 720px;
+}
+
+.lead__sub-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 auto 0 auto;
+}
+
+.lead__sub-title_width_big {
+  max-width: 640px;
+  margin-top: 32px;
+}
+
+.lead__image {
+  max-width: 100%;
+  margin-top: 64px;
+}
+
+
+.lead__caption  {
+  margin: 8px 0 0 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: white;
+}
+
+
+
+@media screen and (max-width: 660px) {
+  .lead__title_font_low {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .lead__sub-title_font_low {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .lead__title_width_low {
+    max-width: 288px;
+  }
+
+  .lead__sub-title_width_low {
+    max-width: 288px;
+    margin-top: 16px;
+  }
+
+  .lead__image_width_low {
+    margin-top: 40px;
+  }
+}
+
+
+/* intro */
+
+.intro {
+  margin-top: 92px;
+}
+
+.intro__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  color: white;
+  margin: 0;
+}
+
+.intro__title_width_big {
+  max-width: 690px;
+}
+
+.intro__sub-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.intro__sub-title_width_big {
+  max-width: 690px;
+  margin-top: 40px;
+}
+
+.intro__list {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.intro__list_width_big {
+  max-width: 690px;
+  margin-top: 33px;
+}
+
+.intro__span {
+  font-weight: 100;
+}
+
+
