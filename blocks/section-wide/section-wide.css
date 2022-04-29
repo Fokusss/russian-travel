@@ -1,0 +1,23 @@
+.section-wide {
+  max-width: calc(1184px + (2 * 48px));
+  margin: 0 auto 0 auto;
+  padding-left: 48px;
+  padding-right: 48px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .section-wide {
+    max-width: calc(1184px + (2 * 24px));
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .section-wide {
+    max-width: calc(1184px + (2 * 16px));
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

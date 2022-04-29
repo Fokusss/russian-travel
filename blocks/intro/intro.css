@@ -1,0 +1,6 @@
+.intro {
+  margin-top: 92px;
+  display: grid;
+  grid-template-columns: minmax(288px, 690px);
+  grid-template-rows: repeat(3, auto);
+}
