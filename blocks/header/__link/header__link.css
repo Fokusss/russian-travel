@@ -4,11 +4,6 @@
   line-height: 28px;
   color: #FFFFFF;
   text-decoration: none;
-  transition: opacity .5;
-}
-
-.header__link:hover {
-  opacity: .8;
 }
 
 @media screen and (max-width: 660px) {

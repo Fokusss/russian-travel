@@ -86,12 +86,9 @@
   line-height: 28px;
   color: #FFFFFF;
   text-decoration: none;
-  transition: opacity .5;
 }
 
-.header__link:hover {
-  opacity: .8;
-}
+
 
 .header__link_active {
   border-bottom: 1px solid white;
@@ -187,11 +184,7 @@
   }
 }
 
-@media screen and (max-width: 660px) {
-  .lead__caption {
-    padding-left: 16px;
-  }
-}
+
 
 /* _____________intro____________ */
 
@@ -269,14 +262,23 @@
 
 
 
-/* <"""""""""""""""""""""БЭМ""""""""""""""""""""""""""""""> */
+/* Блок CARDS  */
 
 
 
 .cards {
-  border: 1px solid aqua;
   margin-top: 92px;
 }
+
+@media screen and (max-width: 660px) {
+  .cards {
+    padding: 0;
+    margin-top: 64px;
+  }
+}
+
+
+
 
 
 
@@ -285,7 +287,7 @@
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 460px) minmax(352px, 484px));
   gap: 48px 40px;
 }
 
@@ -295,15 +297,39 @@
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 768px) {
   .card-container {
     gap: 48px 28px;
   }
 }
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 767px) {
   .card-container {
+    grid-template-columns: .47fr .53fr;
+    gap: 48px 28px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .card-container {
+    grid-template-columns: 1fr;
     gap: 32px;
+  }
+}
+
+.card-container__place {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 860px) {
+  .card-container__place {
+    margin-top: 73px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .card-container__place {
+    margin-top: 50px;
   }
 }
 
@@ -321,7 +347,6 @@
     line-height: 46px;
   }
 }
-
 
 .card-container__special {
   align-self: flex-end;
@@ -363,6 +388,7 @@
   gap: 27px;
 }
 
+
 @media screen and (max-width: 860px) {
   .card-container__block-parag {
     gap: 25px;
@@ -385,9 +411,14 @@
   }
 }
 
+/* Блок мобильный падинг БЭМ - есть */
+@media screen and (max-width: 660px) {
+  .mobil-pad {
+    padding: 0 16px 0 16px;
+  }
+}
 
-
-
+/* _____________________________________БЭМ______________________*/
 
 .cover {
   border: 1px solid salmon;
@@ -395,7 +426,22 @@
   margin-top: 92px;
 }
 
+
+
+
+
 .footer {
   border: 1px solid mediumblue;
   height: 100px;
 }
+
+/* блок для ссылок БЭМ - есть */
+.link {
+  transition: opacity .5;
+}
+
+.link:hover {
+  opacity: .8;
+}
+
+
