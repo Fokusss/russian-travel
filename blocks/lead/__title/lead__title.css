@@ -9,7 +9,8 @@
   color: white;
 }
 
-@media screen and (max-width: 660px) {
+
+@media screen and (max-width: 710px) {
   .lead__title {
     max-width: 288px;
     font-size: 40px;
