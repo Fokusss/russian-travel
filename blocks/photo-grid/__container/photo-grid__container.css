@@ -1,7 +1,7 @@
 .photo-grid__container {
   list-style-type: none;
   max-width: 100%;
-  margin:0;
+  margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -13,7 +13,6 @@
     grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
   }
 }
-
 
 @media screen and (max-width: 320px) {
   .photo-grid__container {
