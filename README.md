@@ -3,4 +3,4 @@
 Сайт-статья.
 Используются технологии построения сетки- Flex, Grid.
 
-https://github.com/Fokusss/russian-travel
+https://fokusss.github.io/russian-travel/
