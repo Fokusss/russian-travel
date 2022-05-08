@@ -1,4 +1,6 @@
 .header__menu {
+  list-style-type: none;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 18px;

@@ -1,0 +1,6 @@
+.cards__place {
+  list-style-type: none;
+  display: grid;
+  gap: 80px;
+  padding: 0;
+}
